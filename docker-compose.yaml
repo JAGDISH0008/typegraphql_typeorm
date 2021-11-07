@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  server:
+    image: node:latest
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/usr/server
+    working_dir: /usr/server
+    command: "npm run start"
